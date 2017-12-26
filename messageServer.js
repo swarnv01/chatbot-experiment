@@ -1,7 +1,7 @@
 var RtmClient = require('@slack/client').RtmClient;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 
-var bot_token = process.env.SLACK_BOT_TOKEN || 'xoxb-278047956548-WtmeeGSfH8YKfCGuNg0J8sqz';
+var bot_token = process.env.SLACK_BOT_TOKEN || 'xoxb-275091219526-MOO5Z8nrEUctH4D7SbpWLWLX';
 
 var rtm = new RtmClient(bot_token);
 
