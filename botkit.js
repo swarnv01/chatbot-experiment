@@ -5,8 +5,7 @@
 
 var Botkit = require('botkit');
 var wit = require('botkit-witai')({
-    // accessToken: 'LI5CGZRJNZWQETZ2WS3JMMBAAAZEBVT4',
-    accessToken: 'MYWH5DWLDSHKBA4YX2YFHL75OGSABFOQ',
+    accessToken: 'youwittoken',
     logLevel: 'debug'
 })
 var heading
@@ -16,10 +15,7 @@ var controller = Botkit.slackbot({
 });
 
 var bot = controller.spawn({
-    // token: process.env.token
-    // token: 'xoxb-278047956548-WtmeeGSfH8YKfCGuNg0J8sqz'
-    token: 'xoxb-275091219526-MOO5Z8nrEUctH4D7SbpWLWLX'
-    // token: 'xoxp-273155884230-273155884646-276320839283-bc1d26a5a06cb49f346fdd3c0cf501ab'
+    token: 'your salck token'
 }).startRTM();
 
 controller.middleware.receive.use(wit.receive)
